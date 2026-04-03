@@ -45,7 +45,7 @@ class Docker:
                 if self.tmp_status is False:
                     self.log.information(message=message)
                     self.tmp_status = True
-                print('  %s' % line['progress'], end='\r')
+                print('  %s' % line['progressDetail'], end='\r')
 
         if self.tmp_status is True:
             print('')
